@@ -1,4 +1,4 @@
-# C4C4S.bat / C4C4S.bat
+# C4C4S.bat / C4C4.bat
 <b>Esta es una herramienta para copiar todos los archivos de una memoria externa sin ser detectado.</b><br><br>
 Escucha cuando se conecta un dispositivo de almacenamiento, despues copia los archivos del dispositivo conectado y tienes la opción de borrar los archivos despues de ser copiados.
 
